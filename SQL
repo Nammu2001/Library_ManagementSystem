@@ -1,0 +1,10 @@
+create table books(
+id SERIAL PRIMARY KEY,
+title VARCHAR NOT NULL,
+author VARCHAR,
+price DECIMAL(10,2),
+available_copies INT NOT NULL
+)
+select * from books
+insert into books(title,author,price,available_copies)values('harry potter','alex',120,12),('fairy tales','bob',320,15),
+('pancharantra','copper',100,20),('java','raghavendra',420,8)
